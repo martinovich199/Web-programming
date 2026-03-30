@@ -49,12 +49,7 @@ if(int a=0; a!=4; a++){
  if(int a=0; a!=4; a++){
     console.WriatLine("Эрнест какшка")
     ф++;} 
- if(int a=0; a!=4; a++){
-    console.WriatLine("Эрнест какшка")
-    ф++;} 
-if(int a=0; a!=4; a++){
-    console.WriatLine("Эрнест какшка")
-    ф++;} 
+
 ```
 
 ---

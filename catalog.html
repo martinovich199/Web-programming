@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Time - Catalog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@200;300;500;700&family=Roboto:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="catalog-page">
+        <header class="catalog-header">
+            <nav class="nav catalog-nav">
+                <a href="index.html" class="nav__link">Home</a>
+                <a href="index.html#about" class="nav__link">About Us</a>
+                <a href="catalog.html" class="nav__link nav__link--active">Tours</a>
+                <a href="index.html#tours" class="nav__link">Gallery</a>
+                <a href="index.html#about" class="nav__link">Reviews</a>
+                <a href="index.html#about" class="nav__link">Contact</a>
+            </nav>
+        </header>
+
+        <section class="catalog-hero container">
+            <p class="catalog-hero__eyebrow">Travel Time catalog</p>
+            <h1 class="catalog-hero__title">Choose your next adventure</h1>
+            <p class="catalog-hero__text">Find mountain tours, lake routes, waterfall weekends and calm field escapes. Cards are generated dynamically with JavaScript.</p>
+        </section>
+
+        <section class="catalog-tools container" aria-label="Catalog controls">
+            <div class="catalog-search">
+                <label class="catalog-label" for="searchInput">Search by name or description</label>
+                <input class="catalog-input" id="searchInput" type="search" placeholder="Search tours">
+            </div>
+
+            <div class="catalog-select-wrap">
+                <label class="catalog-label" for="sortSelect">Sort by</label>
+                <select class="catalog-select" id="sortSelect">
+                    <option value="default">Default order</option>
+                    <option value="price-asc">Price: low to high</option>
+                    <option value="price-desc">Price: high to low</option>
+                    <option value="name-asc">Name: A to Z</option>
+                    <option value="rating-desc">Rating: best first</option>
+                </select>
+            </div>
+
+            <div class="catalog-category-list" id="categoryList" aria-label="Tour categories"></div>
+        </section>
+
+        <section class="array-actions container" aria-label="Array method actions">
+            <button class="array-action" type="button" data-action="all">All tours</button>
+            <button class="array-action" type="button" data-action="map">map: discount labels</button>
+            <button class="array-action" type="button" data-action="filter">filter: rating 4.8+</button>
+            <button class="array-action" type="button" data-action="reduce">reduce: total price</button>
+            <button class="array-action" type="button" data-action="sort">sort: cheaper first</button>
+            <button class="array-action" type="button" data-action="find">find: first weekend</button>
+            <button class="array-action" type="button" data-action="some">some: family tours</button>
+            <button class="array-action" type="button" data-action="every">every: guided check</button>
+            <button class="array-action" type="button" data-action="slice">slice: first 6</button>
+            <button class="array-action" type="button" data-action="reverse">reverse: newest first</button>
+            <button class="array-action" type="button" data-action="includes">includes: photo tours</button>
+        </section>
+
+        <section class="catalog-results container" aria-live="polite">
+            <div class="catalog-summary" id="catalogSummary"></div>
+            <div class="catalog-grid" id="catalogGrid"></div>
+        </section>
+    </main>
+
+    <script src="catalog.js"></script>
+</body>
+</html>
